@@ -1,4 +1,4 @@
-package config;
+package config.util;
 
 import org.thymeleaf.TemplateEngine;
 

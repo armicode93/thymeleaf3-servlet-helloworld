@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration User</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+</head>
+<h1> Registration </h1>
+
+    <div class="form-group">
+        <label class="control-label" for="login"> Login </label>
+        <input id="login" class="form-control" th:field="*{login}"
+               required autofocus="autofocus" />
+        <div class="alert alert-warning"  th:errorclass="error"></div>
+
+
+        <div class="form-group">
+            <label class="control-label" for="password"> Password </label> <input
+                id="password" class="form-control" type="password"
+                th:field="*{password}" required autofocus="autofocus" />
+            <div class="alert alert-warning"  th:errorclass="error"></div>
+        </div>
+
+        <label class="control-label" for="firstname"> First Name </label>
+        <input id="firstname" class="form-control" th:field="*{firstname}"
+               required autofocus="autofocus" />
+        <div class="alert alert-warning"   th:errors="*{firstname}" th:errorclass="error"></div>
+
+
+    </div>
+    <div class="form-group">
+        <label class="control-label" for="lastname"> LastName </label> <input
+            id="lastname" class="form-control" th:field="*{lastname}"
+            required autofocus="autofocus" />
+        <div class="alert alert-warning"   th:errors="*{lastname}" th:errorclass="error"></div>
+    </div>
+
+
+    <div class="form-group">
+        <label class="control-label" for="email"> Email </label> <input
+            id="email" class="form-control" th:field="*{email}" required
+            autofocus="autofocus" />
+        <div class="alert alert-warning"   th:errors="*{email}" th:errorclass="error"></div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label" for="langue"> Langue </label> <input
+            id="langue" class="form-control"
+            th:field="*{langue}" required autofocus="autofocus" />
+        <div class="alert alert-warning"  th:errors="*{langue}" th:errorclass="error"></div>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-success">Register</button>
+        <span>Already registered? <a href="/" th:href="@{/login}">Login
+								here</a></span>
+    </div>
+
+</form>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

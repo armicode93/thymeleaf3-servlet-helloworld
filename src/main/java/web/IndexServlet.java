@@ -1,7 +1,7 @@
 package web;
 
 
-import config.TemplateEngineUtil;
+import config.util.TemplateEngineUtil;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
 
