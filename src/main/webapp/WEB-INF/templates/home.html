@@ -59,14 +59,24 @@
 
 
 <div class="container">
-    <h1>Home page</h1>
+    <h1>Welcome to the Home page</h1>
 
     <!-- print username id -->
     <!--sec:authentification thymeleaf attribute to springSecurity
     principal.username sintax to take the username from the spring security object -->
 
     <!-- <h5>Welcome <span sec:authentication="principal.username"></span></h5> -->
-    <h5>Welcome <a th:inline="text">[[${#httpServletRequest.remoteUser}]]</a></h5>
+
+
+    <div class="form-group">
+						<span>New user? <a href="/" th:href="@{/registration}">Register
+								here</a></span>
+    </div><br/>
+
+
+    <div class="form-group">
+						<span>Have an account? <a href="/" th:href="@{/login}">Log in </a></span>
+    </div>
 
 
 

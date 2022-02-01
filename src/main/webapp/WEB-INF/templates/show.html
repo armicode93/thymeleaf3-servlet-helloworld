@@ -14,20 +14,22 @@
 <div class="container">
     <div layout:fragment="content">
 
-        <h1 th:text="${title}">Liste des spectacles</h1>
-        <table class ="table" >
-            <thead class="thead-dark">
-            <tr>
-                <th scope="col">Spectacle</th>
-                <th scope="col">Price</th>
-                <th scope="col">Nombre reprentation</th>
-            </tr>
-            </thead>
+        <img class="picture"  th:src="@{'/images/ayiti.jpg'}" src="/images/ayiti.jpg" alt="" width="200"/></p>
 
 
 
-        </table>
+        <p ><strong>Description</strong>
+            <span >Description spectacle</span></p>
+        <!-- Affichage dans la meme ligne avec <a></a> -->
+        <!-- Affichage location -->
+        <p><strong>Lieu: </strong>
+            <span >Art Center</span>
+
+        </p>
+        <!-- Affichage prix -->
+        <p><strong>Prix: </strong><span >9.99 € </span></p>
     </div>
 </div>
+
 </body>
 </html>
